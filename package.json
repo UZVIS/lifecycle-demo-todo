@@ -1,0 +1,8 @@
+{
+  "name": "lifecycle-demo-todo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}
