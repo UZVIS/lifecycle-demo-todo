@@ -3,6 +3,7 @@
 
 // Return a new list with one more task at the end.
 export function addTask(tasks, text) {
+  if (text === '') return tasks; // nothing typed: keep the list as it is
   return [...tasks, { text, done: false }];
 }
 
