@@ -19,3 +19,7 @@ test('remaining counts only the tasks that are not done', () => {
 test('addTask ignores an empty task', () => {
   assert.deepEqual(addTask([], ''), []);
 });
+
+test('addTask ignores a task that is only spaces', () => {
+  assert.deepEqual(addTask([], '   '), []);
+});
