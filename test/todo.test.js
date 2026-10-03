@@ -15,3 +15,11 @@ test('toggleTask ticks one task and leaves the others alone', () => {
 test('remaining counts only the tasks that are not done', () => {
   assert.equal(remaining([{ text: 'a', done: true }, { text: 'b', done: false }]), 1);
 });
+
+test('addTask ignores an empty task', () => {
+  assert.deepEqual(addTask([], ''), []);
+});
+
+test('addTask ignores a task that is only spaces', () => {
+  assert.deepEqual(addTask([], '   '), []);
+});
