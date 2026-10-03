@@ -5,6 +5,13 @@
   --accent: #1f6feb;
 }
 
+body.dark {
+  --bg: #16171a;
+  --fg: #ececea;
+  --line: #34363b;
+  --accent: #4c8dff;
+}
+
 body {
   margin: 0;
   background: var(--bg);
