@@ -7,11 +7,6 @@ const form = document.querySelector('#new-task');
 const input = document.querySelector('#task-text');
 const list = document.querySelector('#tasks');
 const count = document.querySelector('#count');
-const themeButton = document.querySelector('#theme-button');
-
-themeButton.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-});
 
 function render() {
   list.replaceChildren();
